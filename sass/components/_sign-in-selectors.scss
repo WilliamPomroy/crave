@@ -1,0 +1,33 @@
+.sign-in {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid $grey;
+    border-radius: 0.25rem;
+    margin: 1.5rem 0;
+    transition: border 0.3s ease-in-out;
+    .through {
+        span {
+            display: block;
+            color: $white;
+        }
+        .login-method {
+            color: $light-blue;
+            font-weight: 700;
+        }
+    }
+    .right-chevron {
+        width: 1.25rem;
+        fill: $light-blue;
+    }
+    &:hover {
+        border: 2px solid $white;
+    }
+    &:first-of-type {
+        margin-top: 3rem;
+    }
+    &:last-of-type {
+        margin-bottom: 3rem;
+    }
+}

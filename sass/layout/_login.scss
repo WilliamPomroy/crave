@@ -1,0 +1,166 @@
+.login-container {
+    max-width: 500px;
+    margin: 0 1.5rem;
+    min-height: calc(100vh - 100px);
+    position: relative;
+    h2, p {
+        text-align: center;
+    }
+    .inner-container {
+        padding: 6rem 0 3rem 0;
+        width: 100%;
+    }
+}
+
+
+.login-logo {
+    height: 3rem;
+    display: block;
+    margin: 0 auto 3rem;
+}
+
+.separator {
+    position: relative;
+    height: 1.5rem;
+    margin: 1.5rem 1rem;
+    .line {
+        position: absolute;
+        top: 0.75rem;
+        z-index: -1;
+    }
+    .or {
+        display: block;
+        text-align: center;
+        span {
+            color: $grey;
+            padding: 0 2rem;
+            background-color: $navy;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.bottom-line {
+    margin: 3rem 0 1.5rem 0;
+}
+
+.subscribe,
+.sign-up {
+    font-size: 1rem;
+}
+
+.sign-up {
+    color: $light-blue;
+    text-decoration: none;
+    &:hover {
+        color: $light-blue;
+        text-decoration: underline;
+    }
+}
+
+form {
+    input,
+    label {
+        display: block;
+    }
+    label {
+        margin: 0.5rem 0;
+        font-weight: 700;
+    }
+    input {
+        width: 100%;
+        padding: 1rem;
+        background-color: $navy;
+        color: $white;
+        border: 2px solid $grey;
+        border-radius: 0.25rem;
+        outline: none;
+        font-size: 1.25rem;
+        transition: all 0.3s ease-in-out;
+        &:focus {
+            border: 2px solid $white;
+        }
+    }
+    input[type=submit] {
+        margin-top: 1.5rem;
+        background-color: $light-blue;
+        border: none;
+        color: $navy;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+}
+
+.sign-in-btn {
+    margin-top: 1.5rem;
+    width: 100%;
+    display: block;
+    margin: 1rem 0;
+}
+
+.signed-in-para {
+    margin-bottom: 3rem;
+}
+
+.log-in {
+    margin: 1.5rem 0;
+}
+
+.hide-log-in {
+    display: none;
+}
+
+.previous-logins {
+    margin: 3rem auto;
+    width: calc(100% - 2rem);
+    .box-container {
+        position: relative;
+        width: 100%;
+        height: 4.5rem;
+        display: flex;
+        justify-content: space-between;
+        border: 2px solid $grey;
+        border-radius: 0.25rem;
+        margin: 1.5rem 0;
+        transition: border 0.3s ease-in-out;
+        &:hover {
+            border: 2px solid $white;
+        }
+        .prev-inner-container {
+            user-select: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 1.5rem;
+        }
+        .add-another {
+            user-select: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 1.5rem;
+            color: $light-blue;
+            svg {
+                fill: $light-blue;
+            }
+        }
+        .remove-container {
+            position: absolute;
+            top: 2.2rem;
+            height: 1.25rem;
+            width: 1.25rem;
+            transform: translateY(-50%);
+            right: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 648px) {
+    .login-container {
+        margin: 0 auto;
+    }
+}

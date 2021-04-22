@@ -1,0 +1,30 @@
+.remove {
+    display: inline-block;
+    position: relative;
+    height: 1.25rem;
+    width: 1.25rem;
+    &:hover {
+        .right-up,
+        .left-up {
+            background-color: $red;
+        }
+    }
+    .right-up,
+    .left-up {
+        border-radius: 0.25rem;
+        height: 0.25rem;
+        width: 1.5rem;
+        display: block;
+        background-color: $grey;
+        position: absolute;
+        top: 0.5rem;
+        left: -0.1rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .right-up {
+        transform: rotate(135deg);
+    }
+    .left-up {
+        transform: rotate(45deg);
+    }
+}
